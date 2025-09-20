@@ -1,0 +1,80 @@
+# ---------- Base image ----------
+FROM python:3.11
+
+# ---------- Install system tools + Java (needed for pypmml) ----------
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    bash \
+    vim \
+    default-jre \
+    && rm -rf /var/lib/apt/lists/*
+
+# ---------- Environment variables ----------
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV PATH="/home/appuser/.local/bin:$PATH"
+
+# ---------- Create a non-root user for safety ----------
+RUN useradd -m appuser
+USER appuser
+
+# ---------- Set working directory ----------
+WORKDIR /app
+
+# ---------- Copy requirements first ----------
+COPY --chown=appuser:appuser requirements.txt .
+
+# ---------- Install Python dependencies ----------
+RUN pip install --no-cache-dir -r requirements.txt
+
+# ---------- Copy app code ----------
+COPY --chown=appuser:appuser ./app /app/app
+
+# ---------- Validate symptoms.json ----------
+RUN python -m app.validate_symptoms || echo "⚠️ Skipping validation in dev mode"
+
+# ---------- Expose FastAPI port ----------
+EXPOSE 8000
+
+# ---------- Start Uvicorn in development mode ----------
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+
+
+
+# # ---------- Base image ----------
+# FROM python:3.11
+
+# # ---------- Install system tools ----------
+# RUN apt-get update && apt-get install -y \
+#     git \
+#     curl \
+#     bash \
+#     vim \
+#     && rm -rf /var/lib/apt/lists/*
+
+# # ---------- Environment variables ----------
+# ENV PYTHONDONTWRITEBYTECODE=1
+# ENV PYTHONUNBUFFERED=1
+
+# # ---------- Set working directory ----------
+# WORKDIR /app
+
+# # ---------- Copy and install Python dependencies ----------
+# COPY requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
+
+# # ---------- Copy app code ----------
+# # Use /app/app folder so Python modules work correctly
+# COPY ./app /app/app
+
+# # ---------- Validate symptoms.json ----------
+# RUN python -m app.validate_symptoms
+
+# # ---------- Expose port ----------
+# EXPOSE 8000
+
+# # ---------- Start Uvicorn in development mode ----------
+# # --reload enables hot reload when you edit files
+# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

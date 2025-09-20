@@ -1,0 +1,68 @@
+# ==============================
+# Global ignores
+# ==============================
+.env
+*.env
+*.log
+*.pid
+*.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ==============================
+# Node.js (frontend, backend, graphql)
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Build / dist output
+dist/
+build/
+.next/
+out/
+coverage/
+
+# ==============================
+# Python (backend)
+# ==============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# ==============================
+# GraphQL service
+# ==============================
+graphql/node_modules/
+graphql/dist/
+graphql/build/
+
+# ==============================
+# Docker
+# ==============================
+*.pid
+*.log
+docker-compose.override.yml
+.docker/
+docker-data/
+
+# ==============================
+# IDE / Editors
+# ==============================
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project

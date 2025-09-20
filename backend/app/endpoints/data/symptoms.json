@@ -1,0 +1,122 @@
+[
+  {
+    "id": "red_chest_pain",
+    "category": "red",
+    "keywords": ["chest pain", "pressure in chest", "tightness in chest"],
+    "patterns": ["\\b(chest|cardiac)\\s+(pain|pressure|tightness)\\b"],
+    "response": {
+      "en": "Chest pain should never be ignored. Please contact emergency services immediately.",
+      "es": "El dolor en el pecho nunca debe ignorarse. Contacte a los servicios de emergencia inmediatamente.",
+      "fr": "La douleur thoracique ne doit jamais être ignorée. Contactez immédiatement les services d'urgence.",
+      "ar": "لا ينبغي أبداً تجاهل آلام الصدر. يرجى الاتصال بخدمات الطوارئ فوراً.",
+      "zh": "胸痛绝不能忽视。请立即联系急救服务。"
+    },
+    "snomed_ct": "29857009",
+    "icd11": "BA40"
+  },
+  {
+    "id": "red_breathing_difficulty",
+    "category": "red",
+    "keywords": ["shortness of breath", "difficulty breathing", "can't breathe", "breathless"],
+    "patterns": ["\\b(difficulty|trouble|shortness)\\s+of\\s+breath\\b"],
+    "response": {
+      "en": "Difficulty breathing is a medical emergency. Please seek immediate care.",
+      "es": "La dificultad para respirar es una emergencia médica. Busque atención inmediata.",
+      "fr": "La difficulté à respirer est une urgence médicale. Consultez immédiatement.",
+      "ar": "صعوبة التنفس حالة طبية طارئة. يرجى طلب الرعاية فوراً.",
+      "zh": "呼吸困难是医疗紧急情况。请立即寻求帮助。"
+    },
+    "snomed_ct": "267036007",
+    "icd11": "MD70"
+  },
+  {
+    "id": "red_stroke",
+    "category": "red",
+    "keywords": ["sudden weakness", "slurred speech", "face drooping", "stroke"],
+    "patterns": ["\\b(slurred\\s+speech|face\\s+droop|sudden\\s+weakness)\\b"],
+    "response": {
+      "en": "Possible stroke symptoms detected. Call emergency services immediately.",
+      "es": "Síntomas de posible accidente cerebrovascular detectados. Llame inmediatamente a los servicios de emergencia.",
+      "fr": "Symptômes possibles d'un AVC détectés. Appelez immédiatement les services d'urgence.",
+      "ar": "تم اكتشاف أعراض سكتة دماغية محتملة. يرجى الاتصال بخدمات الطوارئ فوراً.",
+      "zh": "检测到可能的中风症状。请立即联系急救服务。"
+    },
+    "snomed_ct": "230690007",
+    "icd11": "8B20"
+  },
+  {
+    "id": "red_seizure",
+    "category": "red",
+    "keywords": ["seizure", "convulsions", "fitting"],
+    "patterns": ["\\b(seizure|convulsion|fitting)\\b"],
+    "response": {
+      "en": "Seizures require urgent medical attention. Call emergency services immediately.",
+      "es": "Las convulsiones requieren atención médica urgente. Llame inmediatamente a los servicios de emergencia.",
+      "fr": "Les crises nécessitent une attention médicale urgente. Appelez immédiatement les services d'urgence.",
+      "ar": "النوبات تستدعي عناية طبية عاجلة. يرجى الاتصال بخدمات الطوارئ فوراً.",
+      "zh": "癫痫发作需要紧急医疗处理。请立即拨打急救电话。"
+    },
+    "snomed_ct": "91175000",
+    "icd11": "8A60"
+  },
+  {
+    "id": "red_bleeding",
+    "category": "red",
+    "keywords": ["severe bleeding", "cannot stop bleeding", "bleeding heavily"],
+    "patterns": ["\\b(severe|heavy)\\s+bleeding\\b"],
+    "response": {
+      "en": "Severe bleeding is life threatening. Apply pressure and call emergency services immediately.",
+      "es": "El sangrado severo es potencialmente mortal. Aplique presión y llame a los servicios de emergencia inmediatamente.",
+      "fr": "Les saignements abondants sont mortels. Appliquez une pression et appelez immédiatement les services d'urgence.",
+      "ar": "النزيف الشديد يهدد الحياة. اضغط على مكان النزيف واتصل بخدمات الطوارئ فوراً.",
+      "zh": "严重出血可能危及生命。请加压并立即联系急救服务。"
+    },
+    "snomed_ct": "21071007",
+    "icd11": "NB52"
+  },
+  {
+    "id": "red_unconscious",
+    "category": "red",
+    "keywords": ["unconscious", "passed out", "not waking up"],
+    "patterns": ["\\b(unconscious|passed\\s+out|not\\s+waking\\s+up)\\b"],
+    "response": {
+      "en": "Unconsciousness is a critical emergency. Call emergency services immediately.",
+      "es": "La pérdida de consciencia es una emergencia crítica. Llame a los servicios de emergencia de inmediato.",
+      "fr": "La perte de conscience est une urgence critique. Appelez immédiatement les services d'urgence.",
+      "ar": "فقدان الوعي حالة طارئة خطيرة. يرجى الاتصال بخدمات الطوارئ فوراً.",
+      "zh": "失去意识是严重紧急情况。请立即拨打急救电话。"
+    },
+    "snomed_ct": "39848009",
+    "icd11": "MB54"
+  },
+  {
+    "id": "red_suicidal",
+    "category": "red",
+    "keywords": ["suicidal", "want to die", "kill myself"],
+    "patterns": ["\\b(suicidal|kill\\s+myself|want\\s+to\\s+die)\\b"],
+    "response": {
+      "en": "If you are thinking of harming yourself, please reach out for immediate help. Contact emergency services or a suicide prevention hotline now.",
+      "es": "Si está pensando en hacerse daño, busque ayuda inmediata. Contacte a los servicios de emergencia o a una línea de prevención del suicidio ahora.",
+      "fr": "Si vous pensez à vous faire du mal, demandez de l'aide immédiatement. Contactez les services d'urgence ou une ligne de prévention du suicide.",
+      "ar": "إذا كنت تفكر في إيذاء نفسك، يرجى طلب المساعدة فوراً. اتصل بخدمات الطوارئ أو بخط منع الانتحار الآن.",
+      "zh": "如果您有自残的念头，请立即寻求帮助。请联系急救服务或自杀干预热线。"
+    },
+    "snomed_ct": "25786006",
+    "icd11": "MB23"
+  },
+  {
+    "id": "amber_infant_fever",
+    "category": "amber",
+    "keywords": ["infant fever", "baby has fever", "child high fever"],
+    "patterns": ["\\b(infant|baby|child)\\s+(fever|high\\s+temperature)\\b"],
+    "response": {
+      "en": "Fever in infants or very young children can be serious. Please seek immediate medical care.",
+      "es": "La fiebre en bebés o niños pequeños puede ser grave. Busque atención médica inmediata.",
+      "fr": "La fièvre chez les nourrissons ou les jeunes enfants peut être grave. Consultez immédiatement.",
+      "ar": "الحمى عند الرضع أو الأطفال الصغار قد تكون خطيرة. يرجى طلب الرعاية الطبية فوراً.",
+      "zh": "婴儿或幼儿发烧可能很严重。请立即就医。"
+    },
+    "snomed_ct": "386661006",
+    "icd11": "CA23"
+  }
+]
