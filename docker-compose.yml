@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   db:
     image: postgres:14
@@ -13,15 +15,17 @@ services:
   backend:
     build:
       context: ./backend
-      dockerfile: Dockerfile.dev   # Use dev Dockerfile
+      dockerfile: Dockerfile.dev
     ports:
       - "8000:8000"
     depends_on:
       - db
+      - redis
     environment:
       DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/healthflow
+      REDIS_HOST: redis
     volumes:
-      - ./backend/app:/app/app             # Mount only app folder
+      - ./backend/app:/app/app
       - ./backend/requirements.txt:/app/requirements.txt
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     dns:
@@ -42,7 +46,7 @@ services:
       - 8.8.4.4
 
   frontend:
-    build: 
+    build:
       context: ./frontend
     ports:
       - "3000:3000"
@@ -50,26 +54,38 @@ services:
       - backend
       - graphql
     volumes:
-      - ./frontend:/app          # Mount local frontend folder
-      - /app/node_modules        # Keep container node_modules isolated
+      - ./frontend:/app
+      - /app/node_modules
     environment:
       NODE_ENV: development
-      CHOKIDAR_USEPOLLING: "true"  # Needed for Windows
+      CHOKIDAR_USEPOLLING: "true"
     command: sh -c "npm install && npm run dev"
     dns:
       - 8.8.8.8
       - 8.8.4.4
+
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  hospital_updater:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: hospital_updater
+    depends_on:
+      - redis
+    environment:
+      REDIS_HOST: redis
+    command: ["python", "app/services/update_hospital_data.py"]
 
 volumes:
   db_data:
 
 
 
-
-
-
-
-# version: '3.8'
 
 # services:
 #   db:
@@ -84,7 +100,9 @@ volumes:
 #       - db_data:/var/lib/postgresql/data
 
 #   backend:
-#     build: ./backend
+#     build:
+#       context: ./backend
+#       dockerfile: Dockerfile.dev   # Use dev Dockerfile
 #     ports:
 #       - "8000:8000"
 #     depends_on:
@@ -92,7 +110,8 @@ volumes:
 #     environment:
 #       DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/healthflow
 #     volumes:
-#       - ./backend:/app
+#       - ./backend/app:/app/app             # Mount only app folder
+#       - ./backend/requirements.txt:/app/requirements.txt
 #     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 #     dns:
 #       - 8.8.8.8
@@ -125,11 +144,81 @@ volumes:
 #     environment:
 #       NODE_ENV: development
 #       CHOKIDAR_USEPOLLING: "true"  # Needed for Windows
-#     command: sh -c "npm install && npm run dev"  # <-- Ensure Vite is installed
+#     command: sh -c "npm install && npm run dev"
 #     dns:
 #       - 8.8.8.8
 #       - 8.8.4.4
 
 # volumes:
 #   db_data:
+
+
+
+
+
+
+
+# # version: '3.8'
+
+# # services:
+# #   db:
+# #     image: postgres:14
+# #     environment:
+# #       POSTGRES_USER: postgres
+# #       POSTGRES_PASSWORD: postgres
+# #       POSTGRES_DB: healthflow
+# #     ports:
+# #       - "5432:5432"
+# #     volumes:
+# #       - db_data:/var/lib/postgresql/data
+
+# #   backend:
+# #     build: ./backend
+# #     ports:
+# #       - "8000:8000"
+# #     depends_on:
+# #       - db
+# #     environment:
+# #       DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/healthflow
+# #     volumes:
+# #       - ./backend:/app
+# #     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+# #     dns:
+# #       - 8.8.8.8
+# #       - 8.8.4.4
+
+# #   graphql:
+# #     build: ./graphql
+# #     ports:
+# #       - "4000:4000"
+# #     depends_on:
+# #       - backend
+# #     volumes:
+# #       - ./graphql:/app
+# #       - /app/node_modules
+# #     dns:
+# #       - 8.8.8.8
+# #       - 8.8.4.4
+
+# #   frontend:
+# #     build: 
+# #       context: ./frontend
+# #     ports:
+# #       - "3000:3000"
+# #     depends_on:
+# #       - backend
+# #       - graphql
+# #     volumes:
+# #       - ./frontend:/app          # Mount local frontend folder
+# #       - /app/node_modules        # Keep container node_modules isolated
+# #     environment:
+# #       NODE_ENV: development
+# #       CHOKIDAR_USEPOLLING: "true"  # Needed for Windows
+# #     command: sh -c "npm install && npm run dev"  # <-- Ensure Vite is installed
+# #     dns:
+# #       - 8.8.8.8
+# #       - 8.8.4.4
+
+# # volumes:
+# #   db_data:
 

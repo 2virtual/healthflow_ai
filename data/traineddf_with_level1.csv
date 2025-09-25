@@ -1,0 +1,360 @@
+"Group","Sex","Age","Patients.number.per.hour","Arrival.mode","Injury","Chief_complain","Mental","Pain","NRS_pain","SBP","DBP","HR","RR","BT","Saturation","KTAS_RN","Diagnosis.in.ED","Disposition","KTAS_expert","Error_group","Length.of.stay_min","KTAS.duration_min","mistriage","mistriage....."
+2,2,71,3,3,2,"right ocular pain",1,1,2,160,100,84,18,36.6,100,2,"Corneal abrasion",1,"4",2,86,5,NA,NA
+2,1,68,8,2,2,"arm pain, Lt",1,1,2,130,80,102,20,36.6,98,4,"Fracture of surgical neck of humerus, closed",2,"5",4,862,1,NA,NA
+2,1,54,6,4,1,"fever",1,1,3,140,90,94,20,38.1,98,3,"Fever, unspecified",2,"4",1,9246,2,NA,NA
+2,2,49,11,3,1,"With chest discomfort",1,1,3,110,70,70,20,36.2,98,2,"Angina pectoris, unspecified",1,"3",2,400,3,NA,NA
+2,1,38,6,3,1,"Eczema, Eyelid",1,1,3,130,80,80,20,36.3,97,4,"Ocular pain",1,"5",4,185,4,NA,NA
+2,1,53,10,3,1,"epigastric pain",1,1,3,120,80,106,20,36.2,98,3,"Infectious or septic colitis",1,"4",4,8067,5,NA,NA
+2,1,65,12,4,1,"headache",1,1,3,140,100,80,20,36,98,3,"Subarachnoid haemorrhage, unspecified",2,"4",4,153,3,NA,NA
+2,2,53,12,2,2,"Open Wound",1,1,4,130,80,100,20,36.4,97,2,"Open wound of other parts of head, face",2,"3",2,613,4,NA,NA
+2,1,20,10,3,1,"RUQ pain",1,1,4,100,60,90,20,36.4,98,2,"Hepatitis NOS",1,"3",4,745,4,NA,NA
+2,1,79,3,4,2,"chin pain",1,1,4,110,70,80,20,36.2,98,3,"Closed fracture of humerus, NOS",2,"4",4,8199,3,NA,NA
+2,2,59,8,4,1,"Rt. side motor weakness",1,1,5,140,80,88,20,36.5,97,2,"Intracranial haemorrhage (nontraumatic), unspecified",2,"3",2,143,4,NA,NA
+2,1,62,2,3,1,"throat pain",1,1,6,140,90,98,22,36.8,98,2,"Acute epiglottitis without obstruction",2,"3",4,1242,4,NA,NA
+2,2,74,12,4,2,"chest wall pain right",1,1,8,80,50,98,22,36.1,98,1,"Multiple fracture of involving three ribs,Closed",2,"2",1,207,4,NA,NA
+2,1,37,5,4,1,"Abdominal pain (finding)",1,1,3,120,80,101,20,36.8,98,3,"Maternal care for cervical incompetence, 22 weeks or more pregnant ~ less than 34 weeks pregnant",2,"4",4,76,2,NA,NA
+2,1,39,17,3,1,"both leg pain",1,1,3,130,80,93,20,36.3,99,4,"Rhabdomyolysis, lower leg",1,"5",4,589,2,NA,NA
+2,1,81,5,4,2,"Left leg pain",1,1,4,200,160,80,20,36,98,3,"Closed, fracture of shaft of femur",5,"4",4,185,3,NA,NA
+2,2,29,3,3,1,"knee pain",1,1,6,110,70,88,20,36.4,98,3,"Pain in limb, knee joint",1,"4",4,34,2,NA,NA
+2,2,72,6,3,1,"Left chest pain",1,1,2,110,70,92,20,36.7,96,3,"Unstable angina",1,"2",2,10141,4,NA,NA
+2,1,45,10,3,1,"ant. chest pain",1,1,3,110,80,101,20,36.3,100,3,"Ischaemic chest pain",1,"2",2,223,4,NA,NA
+2,1,26,5,4,1,"right lower quadrant abdominal pain",1,1,3,120,80,84,20,36.6,98,4,"Benign neoplasm of ovary, right",1,"3",7,7864,4,NA,NA
+2,1,83,6,4,1,"right hemiparesis",1,1,3,160,100,83,20,36.3,99,3,"Cerebral infarction due to thrombosis of middle cerebral artery",2,"2",8,516,5,NA,NA
+2,1,22,6,3,1,"watery diarrhea",1,1,4,110,70,84,20,36.5,99,4,"Acute watery diarrhoea",1,"3",2,9191,2,NA,NA
+2,1,70,3,2,1,"epigastric pain",1,1,4,100,60,90,20,36,98,4,"Infectious or septic colitis",1,"3",2,714,4,NA,NA
+2,1,82,5,3,1,"V - vomiting",1,1,4,110,60,72,20,36,97,5,"Nause with vomiting",2,"3",3,1312,4,NA,NA
+2,1,20,1,2,1,"HA - Headache",1,1,4,100,70,84,20,37.6,98,4,"Headache",2,"3",4,1220,2,NA,NA
+2,1,22,12,3,2,"both eye pain",1,1,4,110,70,74,20,36.4,98,5,"Keratoconjunctivitis due to Acanthamoeba (H19.2*)",1,"3",4,697775,3,NA,NA
+2,2,29,5,3,1,"leg pain left",1,1,4,110,70,110,20,36.4,98,5,"Complex regional pain syndrome type II of lower limb",1,"4",4,264,1,NA,NA
+2,2,56,13,4,1,"upper abdominal pain",1,1,4,140,90,76,20,36.4,98,4,"Acute pancreatitis, unspecified",2,"3",4,9703,4,NA,NA
+2,2,61,4,3,1,"headache",1,1,4,120,70,76,20,36.5,99,4,"Headache",1,"3",4,414,2,NA,NA
+2,1,65,5,3,1,"epigastric pain",1,1,4,100,60,92,20,36.4,96,4,"Epigastric pain",1,"3",4,344,2,NA,NA
+2,1,74,4,3,1,"epigastric pain",1,1,4,140,100,60,18,36.2,97,4,"Unspecified abdominal pain",1,"3",4,231,2,NA,NA
+2,1,75,11,3,1,"fever",1,1,4,150,80,64,20,36.5,97,4,"Unspecified abdominal pain",1,"3",4,211,4,NA,NA
+2,2,44,3,2,2,"Low Back Pain, Undetermined",1,1,4,110,70,78,20,36.9,99,4,"Low back pain, site unspecified",1,"3",9,39,2,NA,NA
+2,1,59,10,3,1,"hematuria",1,1,5,130,80,90,20,36.6,98,5,"Gross hematuria",1,"3",2,333,1,NA,NA
+2,2,59,12,4,2,"both wrist pain",1,1,5,100,60,64,18,36.6,100,4,"Chronic alcoholism",4,"2",3,9420,3,NA,NA
+2,2,18,4,3,1,"testis pain",1,1,5,130,80,70,20,36.6,99,5,"Torsion of testis",1,"3",4,857,5,NA,NA
+2,1,22,1,3,1,"right upper abdominal pain",1,1,5,100,60,80,20,36.2,98,4,"Female pelvic inflammatory disease, unspecified",1,"3",4,698,3,NA,NA
+2,2,42,7,3,1,"Generalized abdominal pain",1,1,5,120,70,108,22,36.4,99,4,"Unspecified abdominal pain",1,"3",4,7900,3,NA,NA
+2,1,62,1,2,1,"abd pain",1,1,5,130,90,92,22,38.2,98,4,"Urinary tract infection, site not specified",1,"3",4,7980,3,NA,NA
+2,2,78,7,3,1,"acute epigastric pain",1,1,5,120,80,60,20,36.3,99,4,"Upper abdominal pain, unspecified",7,"3",4,9527,2,NA,NA
+2,1,81,5,4,1,"Abd. pain",1,1,5,140,90,88,20,37.1,97,4,"Calculus of bile duct with cholangitis, With obstruction",2,"3",4,9798,2,NA,NA
+2,1,52,8,1,1,"Rt. flank pain",1,1,6,110,60,75,20,36.5,98,4,"Acute pyelonephritis",1,"3",2,376,4,NA,NA
+2,2,22,3,2,2,"H-Headache",1,1,6,110,70,80,20,36,97,4,"Closed multiple fracture of thoracic spine",5,"3",4,760,4,NA,NA
+2,1,33,8,1,1,"headache",1,1,6,100,60,92,20,36.4,98,4,"Tension-type headache",1,"3",4,306,2,NA,NA
+2,1,44,10,3,1,"LLQ pain",1,1,6,110,60,85,20,36.8,98,4,"Female pelvic inflammatory disease, unspecified",1,"3",4,497,4,NA,NA
+2,1,56,10,1,1,"rt flank pain",1,1,6,120,80,74,20,36.2,99,4,"Ureteric stone",1,"3",4,382,2,NA,NA
+2,1,58,5,3,2,"occipital area headache",1,1,6,150,100,88,20,36.3,98,4,"Superficial injury of other parts of head, contusion",1,"3",4,45,3,NA,NA
+2,2,68,10,3,1,"Lt flank pain",1,1,6,160,80,66,20,36.2,99,4,"Unspecified abdominal pain",1,"3",4,262,3,NA,NA
+2,1,79,9,4,1,"RLQ pain",1,1,6,130,80,80,22,36.8,96,4,"Unspecified abdominal pain",1,"3",4,9020,2,NA,NA
+2,1,85,8,3,1,"Lt flank pain",1,1,6,110,60,86,20,36,98,4,"Urinary tract infection, site not specified",1,"3",4,8861,5,NA,NA
+2,2,19,7,4,2,"Open Wound",1,1,7,80,50,110,22,36,98,3,"Multiple contusion NOS",2,"2",7,8124,2,NA,NA
+2,2,27,7,3,1,"post neck pain",1,1,6,130,80,82,20,37.2,98,4,"Cellulitis, unspecified",2,"3",4,9689,4,NA,NA
+2,1,30,6,3,1,"headache",1,1,4,120,70,95,20,36.5,100,4,"Headache",1,"3",4,291,3,NA,NA
+2,1,59,6,3,1,"left facial numbness",1,1,5,120,80,80,20,36.4,100,5,"Cellulitis of external ear",5,"4",2,10301,4,NA,NA
+2,1,30,12,3,1,"upper abdominal pain",1,1,5,120,80,74,20,36.3,98,4,"Observation for suspected malignant neoplasm",2,"3",9,490,2,NA,NA
+2,2,32,2,3,1,"Rt. flank pain",1,1,7,110,60,70,22,36,98,4,"Ureteric stone",1,"3",4,267,2,NA,NA
+2,2,52,12,3,1,"arm pain, Rt",1,1,8,140,100,78,20,36.5,99,5,"Complex regional pain syndrome type II",1,"4",4,406,4,NA,NA
+2,2,16,6,3,2,"Open Wound",1,1,2,110,70,78,20,36.2,99,4,"Open wound of other parts of head, face",1,"4",0,118,3,NA,NA
+2,2,20,2,1,1,"Dislocation of Jaw",1,1,2,130,90,82,20,36.4,98,4,"Dislocation of jaw",1,"4",0,4,2,NA,NA
+2,1,21,12,3,2,"Foreign body sensation in throat",1,1,2,120,80,66,20,36.3,99,4,"Chronic sore throat",1,"4",0,138,2,NA,NA
+2,2,22,1,3,1,"Rt. Chest pain",1,1,2,110,80,84,20,36.6,98,2,"Other chest pain",1,"2",0,8420,3,NA,NA
+2,1,46,3,2,1,"F/C-fever/chills",1,1,2,120,80,104,20,38.2,98,4,"Cellulitis of leg",2,"4",0,1101,2,NA,NA
+2,2,46,17,3,2,"blurred vision",1,1,2,110,70,80,20,36.8,98,4,"Hyphaema",1,"4",0,258,4,NA,NA
+2,2,49,6,3,1,"Rt side numbness",1,1,2,140,80,68,20,36.5,98,3,"Cerebrovascular accident NOS",1,"3",0,7779,4,NA,NA
+2,2,52,4,4,1,"epigastric pain",1,1,2,130,90,78,22,36,99,4,"Obstructive ileus NOS",1,"4",0,516,4,NA,NA
+2,2,54,17,3,2,"Flank pain, Rt.",1,1,2,130,90,80,20,36.4,99,3,"Contusion of front wall of thorax",2,"3",0,305,4,NA,NA
+2,1,54,7,1,1,"low abdominal pain",1,1,2,100,60,74,18,36.4,99,4,"Liver transplant status",1,"4",0,9036,3,NA,NA
+2,1,55,4,2,1,"ant. chest pain",1,1,2,150,100,78,22,36.4,96,2,"Unstable angina",1,"2",0,497,3,NA,NA
+2,2,61,10,3,1,"pain, periumbilical",1,1,2,130,80,98,22,37.2,99,4,"Acute cholecystitis",1,"4",0,679,3,NA,NA
+2,1,61,2,3,1,"abdominal pain, Rt",1,1,2,130,80,74,20,37.6,98,4,"Renal and perinephric abscess",2,"4",0,555,4,NA,NA
+2,1,69,17,3,1,"Abd. pain",1,1,2,120,70,60,20,36.4,98,4,"Unspecified abdominal pain",2,"4",0,698,5,NA,NA
+2,1,17,5,3,1,"H-Headache",1,1,3,100,60,76,20,36.3,99,4,"Non-insulin-dependent diabetes of the young, with nonketotic hyperglycemic-hyperosmolar coma(NKHHC)",2,"4",0,9736,2,NA,NA
+2,2,18,6,3,1,"Abd. pain",1,1,3,110,70,80,20,36.8,98,4,"Hirschsprung's disease",1,"4",0,8535,3,NA,NA
+2,1,19,3,3,1,"lower abdominal pain",1,1,3,110,70,104,22,37.5,99,4,"Regional colitis, unspecified",1,"4",0,373,1,NA,NA
+2,2,26,6,3,1,"chest discomfort left",1,1,3,120,80,72,20,36.6,98,2,"Other chest pain",1,"2",0,405,3,NA,NA
+2,2,27,3,2,1,"LLQ pain",1,1,3,130,80,92,20,36.5,97,4,"Unspecified abdominal pain",1,"4",0,493,2,NA,NA
+2,2,29,8,3,2,"blurred vision",1,1,3,100,60,86,20,36.3,99,4,"Corneal abrasion",1,"4",0,264,2,NA,NA
+2,2,29,1,3,2,"Open Wound",1,1,3,100,60,80,20,36,98,4,"Open wound of other parts of head, face",1,"4",0,402,4,NA,NA
+2,1,32,7,4,1,"right monoparesis",1,1,3,110,70,64,20,36.9,99,3,"Intracerebral haemorrhage in hemisphere, subcortical",2,"3",0,600,3,NA,NA
+2,1,32,3,3,1,"throat pain",1,1,3,100,60,98,20,36.1,98,4,"Chronic sore throat",1,"4",0,405,4,NA,NA
+2,2,33,15,3,1,"pain, periumbilical",1,1,3,100,70,74,20,36.1,99,4,"Other Crohn’s disease, unspecified",2,"4",0,1004,3,NA,NA
+2,2,34,8,3,1,"With chest discomfort",1,1,3,120,80,68,20,36.4,99,2,"Other chest pain",1,"2",0,606,2,NA,NA
+2,2,34,3,3,2,"ocular pain, Rt.",1,1,3,130,80,80,20,36,97,5,"Corneal abrasion",1,"5",0,126,3,NA,NA
+2,1,35,7,3,1,"Chest pain NOS (finding)",1,1,3,100,70,83,20,37,97,2,"Obstructive hypertrophic cardiomyopathy",2,"2",0,420,3,NA,NA
+2,1,35,10,3,1,"ocular pain, Lt.",1,1,3,110,70,74,20,36.6,98,4,"Epidemic keratoconjunctivitis",1,"4",0,272,2,NA,NA
+2,2,35,7,3,1,"fever",1,1,3,120,80,100,20,36.5,99,4,"Ureteric stone",2,"4",0,722,4,NA,NA
+2,1,36,8,3,1,"diffuse abdominal pain",1,1,3,110,70,76,20,36.5,98,4,"Upper abdominal pain, unspecified",1,"4",0,7963,2,NA,NA
+2,1,36,7,3,1,"headache",1,1,3,100,60,80,20,36.4,98,4,"Headache",5,"4",0,854,2,NA,NA
+2,2,37,7,4,1,"LOC - Loss of consciousness",1,1,3,140,80,105,20,36.8,98,3,"Syncope",1,"3",0,9989,5,NA,NA
+2,2,39,5,3,1,"ant. chest pain",1,1,3,140,100,76,18,36.1,99,2,"Unstable angina",1,"2",0,389,4,NA,NA
+2,2,40,15,3,1,"ant. chest pain",1,1,3,120,80,82,20,36.1,100,3,"Pericardial effusion (noninflammatory)",2,"3",0,848,4,NA,NA
+2,1,40,15,3,1,"H-Headache",1,1,3,120,80,62,20,36.2,99,4,"Headache",1,"4",0,397,5,NA,NA
+2,2,41,8,3,1,"leg pain",1,1,3,120,80,88,20,36.6,98,5,"Complex regional pain syndrome type II",1,"5",0,20,3,NA,NA
+2,2,41,11,3,1,"abd pain",1,1,3,110,70,73,20,36.2,98,4,"Malignant neoplasm of body of stomach, early",2,"4",0,944,3,NA,NA
+2,1,41,3,3,2,"Open Wound",1,1,3,130,90,88,20,36.6,98,4,"Open wound of head, part unspecified",1,"4",0,125,4,NA,NA
+2,1,42,3,3,2,"Open Wound",1,1,3,120,70,70,18,36.4,98,4,"Open wound of other parts of head, face",1,"4",0,86,5,NA,NA
+2,1,43,8,3,1,"Rt. flank pain",1,1,3,120,80,98,20,36.8,99,4,"Acute pyelonephritis",2,"4",0,10806,2,NA,NA
+2,1,43,10,3,2,"Open Wound",1,1,3,130,90,72,20,36.5,99,4,"Open wound of other parts of head, face",1,"4",0,263,2,NA,NA
+2,1,44,2,2,1,"LLQ pain",1,1,3,100,60,76,18,36.4,95,4,"Leiomyoma of uterus, unspecified",1,"4",0,9296,2,NA,NA
+2,2,44,9,3,1,"dyspnea",1,1,3,130,80,102,20,37.1,98,3,"Acute HIV infection syndrome",1,"3",0,9891,3,NA,NA
+2,2,44,10,3,1,"Pain, Ankle",1,1,3,120,80,80,20,36,98,5,"Gout, unspecified, ankle joint",1,"5",0,76,3,0,NA
+2,1,44,8,3,1,"Abd. pain",1,1,3,120,80,72,20,36.9,98,3,"Unspecified abdominal pain",1,"3",0,8996,4,NA,NA
+2,2,46,1,4,1,"chest palpitation",1,1,3,100,60,86,20,36.8,98,2,"Palpitations",1,"2",0,596,1,NA,NA
+2,2,47,9,3,2,"ocular pain, Rt.",1,1,3,110,70,80,20,36.8,98,4,"Corneal abrasion",1,"4",0,167,3,NA,NA
+2,2,48,7,3,1,"Foreign Body Sense",1,1,3,120,70,100,20,36.4,96,4,"Chronic sore throat",1,"4",0,7767,3,NA,NA
+2,1,48,4,3,1,"abd pain",1,1,3,120,80,76,20,36.3,98,4,"Acute appendicitis, other and unspecified",7,"4",0,489,3,NA,NA
+2,2,48,5,2,2,"Open Wound",1,1,3,130,80,110,20,36.6,97,3,"Open wound of other parts of head, face",2,"3",0,1013,4,NA,NA
+2,1,48,4,3,1,"Abd. pain",1,1,3,110,70,80,20,36.3,98,4,"Unspecified abdominal pain",1,"4",0,342,1,NA,NA
+2,2,48,9,4,1,"mental change",1,1,3,100,60,100,20,36,90,2,"Hypo-osmolality and hyponatraemia",2,"2",0,9672,4,NA,NA
+2,1,49,2,3,2,"Open Wound",1,1,3,120,80,74,20,36.2,98,4,"Open wound of other parts of head, face",1,"4",0,134,2,NA,NA
+2,1,49,8,3,1,"HA - Headache",1,1,3,150,90,62,20,36,98,4,"Headache",1,"4",0,332,3,NA,NA
+2,2,49,5,4,1,"ant. chest pain",1,1,3,110,80,84,20,36.6,98,2,"Ischaemic chest pain",2,"2",0,7876,4,NA,NA
+2,1,51,6,3,1,"H-Headache",1,1,3,150,100,98,20,36.4,98,4,"Headache",1,"4",0,292,2,NA,NA
+2,2,51,4,2,1,"diffuse abdominal pain",1,1,3,150,100,98,20,36.4,97,4,"Unspecified abdominal pain",4,"4",0,361,3,NA,NA
+2,2,51,10,3,1,"fever",1,1,3,120,80,66,20,36.6,98,4,"Abscess of liver",2,"4",0,262,2,NA,NA
+2,2,51,8,3,2,"Open Wound",1,1,3,110,70,88,20,36.7,98,4,"Open wound of other parts of head, face",1,"4",0,177,3,NA,NA
+2,2,52,6,3,1,"RUQ pain",1,1,3,110,70,100,20,37,98,4,"Unspecified abdominal pain",2,"4",0,10653,4,NA,NA
+2,1,53,5,3,1,"ant. chest pain",1,1,3,110,70,72,20,36.1,99,2,"Other chest pain",4,"2",0,714,4,NA,NA
+2,2,53,8,3,1,"arm pain",1,1,3,130,90,88,20,36.3,98,5,"Complex regional pain syndrome type II",1,"5",0,972,3,NA,NA
+2,2,56,9,3,1,"Left chest pain",1,1,3,150,90,68,20,36.4,99,2,"Ischaemic chest pain",2,"2",0,9098,5,NA,NA
+2,2,56,10,4,1,"Epigastric discomfort(+)",1,1,3,120,80,78,20,36.2,97,4,"Epigastric pain",1,"4",0,385,1,NA,NA
+2,2,56,8,3,1,"abd. Distension",1,1,3,110,70,94,20,36.2,98,4,"Hepatocellular carcinoma",1,"4",0,696,5,NA,NA
+2,2,57,12,3,2,"ocular pain, Rt.",1,1,3,110,70,84,20,36,97,4,"Corneal abrasion",1,"4",0,124,2,NA,NA
+2,2,57,10,3,1,"Lt flank pain",1,1,3,120,80,96,20,36.5,99,4,"Acute pancreatitis, unspecified",5,"4",0,9463,3,NA,NA
+2,1,57,7,2,1,"ant. chest pain",1,1,3,140,90,70,20,36.3,99,2,"Varient angina",2,"2",0,9345,3,NA,NA
+2,1,57,6,2,1,"headache",1,1,3,180,100,68,22,36.2,98,4,"Headache",1,"4",0,759,1,NA,NA
+2,2,58,5,4,1,"Lt hemiparesis",1,1,3,150,100,55,20,36,98,2,"Cerebral infarction due to thrombosis of middle cerebral artery",2,"2",0,208,2,NA,NA
+2,2,58,7,3,1,"ant. chest pain",1,1,3,140,100,70,20,36,98,2,"Myocardial infarction with non-ST elevation",2,"2",0,10342,3,NA,NA
+2,2,58,7,3,2,"Open Wound",1,1,3,110,70,60,20,36.3,94,4,"Open wound of other parts of head, face",1,"4",0,287,2,NA,NA
+2,2,58,11,3,1,"abdominal pain, Rt",1,1,3,160,100,98,20,36.5,97,4,"Acute pancreatitis, unspecified",2,"4",0,10336,3,NA,NA
+2,1,58,10,3,1,"Left chest pain",1,1,3,120,80,96,20,36.5,98,2,"Other chest pain",1,"2",0,793,2,NA,NA
+2,2,58,5,3,1,"ant. chest pain",1,1,3,160,100,80,20,36,98,2,"Unstable angina",1,"2",0,443,3,NA,NA
+2,2,60,7,3,1,"upper abdominal pain",1,1,3,100,60,60,20,36.5,99,4,"Obstructive ileus NOS",5,"4",0,8571,5,NA,NA
+2,1,60,5,3,2,"Open Wound",1,1,3,120,80,80,20,36.8,98,4,"Open wound of other parts of head, face",1,"4",0,7979,3,NA,NA
+2,1,60,9,3,2,"left eye pain",1,1,3,120,80,88,20,36.6,97,4,"Corneal abrasion",1,"4",0,185,3,NA,NA
+2,2,60,5,3,1,"Rt hemiparesis",1,1,3,150,100,88,20,36,98,3,"Cerebral infarction due to thrombosis of basilar artery",2,"3",0,325,4,NA,NA
+2,1,61,12,3,2,"ant. chest pain",1,1,3,100,60,84,20,36.4,98,4,"Contusion of front wall of thorax",1,"4",0,119,2,NA,NA
+2,1,62,3,3,1,"ant. chest pain",1,1,3,150,90,100,20,37.4,98,2,"Pneumonia, unspecified",1,"2",0,607,5,NA,NA
+2,2,62,4,3,1,"dyspnea",1,1,3,110,70,67,20,36,96,2,"Atrial fibrillation and atrial flutter, unspecified",2,"2",0,1124,4,NA,NA
+2,2,63,4,3,1,"abdominal pain, Rt",1,1,3,110,70,78,20,36.3,98,4,"Gallstone(impacted) of gallbladder with cholecystitis (chronic), With obstruction",1,"4",0,8593,3,NA,NA
+2,1,64,7,2,1,"ant. chest pain",1,1,3,130,90,78,20,36.3,97,2,"Varient angina",2,"2",0,888,3,NA,NA
+2,1,65,5,2,1,"dizziness",1,1,3,150,80,61,20,36.4,97,3,"Atrial fibrillation and atrial flutter, unspecified",1,"3",0,389,2,NA,NA
+2,1,65,9,3,1,"Abd. pain",1,1,3,130,100,78,20,36.4,96,4,"Unspecified abdominal pain",5,"4",0,10015,4,NA,NA
+2,1,66,8,2,1,"ant. chest pain",1,1,3,110,70,84,20,36.4,99,2,"Ischaemic chest pain",2,"2",0,580,1,NA,NA
+2,2,66,8,3,1,"LOC - Loss of consciousness",1,1,3,130,80,80,20,36.5,97,3,"Dizziness and giddiness",1,"3",0,598,4,NA,NA
+2,2,66,7,3,1,"ant. chest pain",1,1,3,120,80,63,20,36,97,2,"Other chest pain",1,"2",0,625,5,NA,NA
+2,1,67,12,3,1,"RLQ pain",1,1,3,120,80,88,20,36.3,97,4,"Acute appendicitis, other and unspecified",7,"4",0,624,2,NA,NA
+2,2,68,5,2,1,"LOC",1,1,3,110,70,62,22,36,95,2,"Syncope",1,"2",0,570,2,NA,NA
+2,1,69,6,2,1,"dizziness",1,1,3,170,100,80,20,36.2,99,3,"Dizziness and giddiness",1,"3",0,285,2,NA,NA
+2,1,70,3,3,1,"diarrhea",1,1,3,140,100,80,20,36.2,98,4,"Acute watery diarrhoea",1,"4",0,228,4,NA,NA
+2,1,71,4,1,1,"ant. chest pain",1,1,3,160,90,74,20,36.7,98,2,"Ischaemic chest pain",1,"2",0,535,3,NA,NA
+2,2,71,7,3,1,"abd pain",1,1,3,170,100,80,20,36,98,4,"Observation for suspected malignant neoplasm",1,"4",0,782,5,NA,NA
+2,1,71,6,4,1,"ant. chest pain",1,1,3,100,60,54,20,36.5,96,2,"Atrial fibrillation and atrial flutter, unspecified",1,"2",0,403,1,NA,NA
+2,2,72,15,4,1,"ant. chest pain",1,1,3,150,80,66,20,36.2,95,2,"Acute myocardial infarction, unspecified",2,"2",0,286,2,NA,NA
+2,1,72,6,3,1,"diffuse chest discomfort",1,1,3,100,60,99,22,36,99,2,"Pericardial effusion (noninflammatory)",5,"2",0,483,4,NA,NA
+2,1,72,9,4,1,"dyspnea",1,1,3,100,60,106,20,36.1,93,2,"Ischaemic chest pain",7,"2",0,222,3,NA,NA
+2,1,72,7,3,1,"general weakness",1,1,3,140,100,51,20,36,100,2,"Atrioventricular block, second degree",2,"2",0,782,3,NA,NA
+2,2,73,5,3,1,"abdomen pain",1,1,3,110,70,64,20,36.2,97,4,"Acute abdomen",1,"4",0,980,3,NA,NA
+2,2,73,7,3,1,"Abd. pain",1,1,3,110,70,73,20,36.4,98,4,"Ileus, unspecified",2,"4",0,10098,5,NA,NA
+2,1,74,12,2,2,"Lower Back Pain",1,1,3,140,80,96,20,36.2,97,4,"Vertebra compression fracture, NOS, Lumbar region",5,"4",0,643,4,NA,NA
+2,1,74,8,4,1,"abd pain",1,1,3,90,60,110,20,36.8,91,3,"Unspecified abdominal pain",2,"3",0,10781,1,NA,NA
+2,2,74,10,3,2,"left forearm pain",1,1,3,100,60,72,18,36.6,97,5,"Fracture of lower end of radius with dorsal angulation, closed",2,"5",0,297,3,NA,NA
+2,1,75,12,2,2,"post neck pain",1,1,3,100,60,72,18,36.6,96,4,"Superficial injury of head, part unspecified, contusion",1,"4",0,184,3,NA,NA
+2,2,75,8,4,1,"both leg cellulitis",1,1,3,120,80,60,20,36.3,97,4,"Cellulitis of lower limb",2,"4",0,700427,2,NA,NA
+2,1,76,10,3,1,"RLQ abdominal pain",1,1,3,110,70,80,20,36,98,4,"Ureteric stone",1,"4",0,299,2,NA,NA
+2,2,76,5,2,1,"left side motor weakness",1,1,3,140,100,100,20,36.6,98,2,"Intracerebral haemorrhage in thalamus",5,"2",0,7834,2,NA,NA
+2,1,76,7,3,1,"Abd. pain",1,1,3,120,80,98,20,36.3,97,4,"Chronic viral hepatitis C",1,"4",0,645,3,NA,NA
+2,2,76,12,2,1,"dyspnea",1,1,3,110,70,61,20,36.4,98,2,"Heart failure, unspecified",2,"2",0,700536,5,NA,NA
+2,2,77,5,3,1,"Lt flank pain",1,1,3,120,80,67,20,36.3,93,4,"Unspecified abdominal pain",1,"4",0,231,4,NA,NA
+2,1,77,7,4,1,"Low abd discomfort",1,1,3,110,70,89,20,36.7,96,4,"Abscess of abdominopelvic",7,"4",0,836,4,NA,NA
+2,1,77,2,3,1,"fever",1,1,3,120,80,69,20,36.5,96,4,"Infective arthritis NOS, pelvic region and thigh",2,"4",0,205,3,NA,NA
+2,1,78,10,3,1,"RUQ pain",1,1,3,120,80,80,20,36,97,4,"Choledocholithiasis with cholangitis, With obstruction",2,"4",0,9981,2,NA,NA
+2,1,78,2,3,1,"diffuse chest discomfort",1,1,3,150,100,82,20,36.8,95,3,"Unstable angina",1,"3",0,9989,2,NA,NA
+2,1,79,12,3,1,"ant. chest pain",1,1,3,110,70,80,20,36.4,98,2,"Unstable angina",2,"2",0,396,3,NA,NA
+2,1,79,10,3,1,"RUQ pain",1,1,3,110,70,90,20,36.2,98,4,"Empyema of gallbladder, without calculus",7,"4",0,563,4,NA,NA
+2,2,79,5,3,1,"abdomen pain",1,1,3,130,80,60,20,36.4,97,4,"Ileus, unspecified",2,"4",0,10214,4,NA,NA
+2,1,80,4,3,1,"Left chest pain",1,1,3,100,60,68,20,36.8,96,2,"Unstable angina",1,"2",0,464,4,NA,NA
+2,2,80,10,3,1,"dyspnea",1,1,3,120,80,118,20,36,76,2,"Acute and subacute infective endocarditis",2,"2",0,9984,4,NA,NA
+2,2,81,4,3,1,"dyspnea",1,1,3,100,60,95,20,36,94,3,"Paroxysmal atrial fibrillation",2,"3",0,10519,4,NA,NA
+2,1,81,7,4,1,"left motor weakness",1,1,3,130,100,65,20,36.6,95,3,"Cerebral infarction due to unspecified occlusion or stenosis of posterior cerebral artery",2,"3",0,411,3,NA,NA
+2,1,82,5,2,1,"both eyelid swelling",1,1,3,140,100,64,20,36.3,96,3,"Hypo-osmolality and hyponatraemia",2,"3",0,10210,4,NA,NA
+2,1,83,9,4,1,"ant. chest pain",1,1,3,140,90,72,22,36.1,93,2,"Ischaemic chest pain",2,"2",0,607,5,NA,NA
+2,1,83,13,3,1,"Abd. pain",1,1,3,160,100,102,20,36.5,97,4,"Choledocholithiasis with cholecystitis (with cholangitis), Without mention of obstruction",2,"4",0,781,4,NA,NA
+2,1,84,6,3,1,"cough",1,1,3,110,80,92,20,36.9,97,3,"Cough",2,"3",0,509,4,NA,NA
+2,1,86,7,4,1,"dizziness",1,1,3,120,80,80,20,36.7,95,3,"Dizziness and giddiness",1,"3",0,915,2,NA,NA
+2,2,86,2,4,1,"Rt hemiparesis",1,1,3,140,80,80,20,36.4,98,2,"Cerebrovascular accident NOS",2,"2",0,834,2,NA,NA
+2,2,86,5,4,1,"ant. chest pain",1,1,3,110,70,66,20,36.3,90,2,"Myocardial infarction with non-ST elevation",2,"2",0,11177,4,NA,NA
+2,2,88,11,4,1,"ant. chest pain",1,1,3,110,70,104,24,36.6,97,2,"Ischaemic chest pain",2,"2",0,559,4,NA,NA
+2,1,94,5,3,1,"abdominal pain, LUQ",1,1,3,170,100,68,20,36.1,99,4,"Unspecified abdominal pain",1,"4",0,283,2,NA,NA
+2,2,16,4,3,2,"Open Wound",1,1,4,120,70,82,20,36.6,98,4,"Open wound of other parts of head, face",1,"4",0,818,2,NA,NA
+2,1,22,6,3,1,"H-Headache",1,1,4,110,70,72,20,36.4,98,4,"Infectious or septic colitis",1,"4",0,8513,4,NA,NA
+2,2,22,7,3,2,"Open Wound",1,1,4,110,70,100,20,36.5,99,4,"Open wound of other parts of head, face",1,"4",0,414,1,NA,NA
+2,2,24,6,3,1,"Convulsion",1,1,4,120,80,88,20,36.4,97,3,"Open wound of other parts of head, face",1,"3",0,697999,3,NA,NA
+2,2,24,12,3,2,"nausea",1,1,4,120,80,80,20,36,98,2,"Toxic effect of unspecified substance",2,"2",0,698879,5,NA,NA
+2,1,25,3,3,2,"Open Wound",1,1,4,120,80,88,20,36.6,98,4,"Open wound of other parts of head, face",1,"4",0,296,2,NA,NA
+2,2,26,3,3,2,"Open Wound",1,1,4,120,70,80,20,36.7,99,4,"Open wound of other parts of head, face",1,"4",0,258,1,NA,NA
+2,2,27,6,3,1,"abd pain",1,1,4,110,70,106,20,36.5,98,3,"Crohn’s disease, unspecified, unspecified",2,"3",0,926,5,NA,NA
+2,2,30,10,4,1,"headache",1,1,4,140,80,76,20,36.3,99,3,"Subarachnoid haemorrhage, unspecified",7,"3",0,211,3,NA,NA
+2,2,37,6,3,2,"ocular pain, Rt.",1,1,4,140,90,68,20,36.4,98,4,"Corneal abrasion",1,"4",0,116,1,NA,NA
+2,1,37,3,4,1,"epigastric pain",1,1,4,90,60,86,20,36,98,2,"Dehydration",5,"2",0,1023,4,NA,NA
+2,2,40,8,3,1,"Throat Pain",1,1,4,100,60,72,20,36.6,98,3,"Retropharyngeal and parapharyngeal abscess",7,"3",0,293,5,NA,NA
+2,2,43,6,3,2,"Open Wound",1,1,4,130,80,88,20,36.1,96,4,"Open wound of other parts of wrist and hand",1,"4",0,115,3,NA,NA
+2,2,43,6,3,1,"ant. chest pain",1,1,4,140,90,62,20,36,99,2,"Ischaemic chest pain",2,"2",0,10304,4,NA,NA
+2,2,44,8,4,1,"general weakness",1,1,4,140,80,50,20,36,98,3,"Guillain-Barre syndrome",2,"3",0,187,3,NA,NA
+2,2,44,10,1,2,"Open Wound",1,1,4,150,90,88,20,36.4,98,4,"Traumatic hyphaema",1,"4",0,216,4,NA,NA
+2,2,44,5,1,1,"facial painful swelling",1,1,4,110,70,110,20,37.2,98,4,"Cellulitis of nose(septum)",7,"4",0,422,4,NA,NA
+2,2,46,7,4,1,"dizziness",1,1,4,100,60,52,20,36.8,96,2,"Atrial fibrillation and atrial flutter, unspecified",2,"2",0,9618,5,NA,NA
+2,1,47,8,3,1,"otalgia, Lt.",1,1,4,100,60,60,20,36.4,98,4,"Otalgia",1,"4",0,198,5,NA,NA
+2,2,47,7,3,1,"headache",1,1,4,160,80,62,20,36.4,97,3,"Other chest pain",1,"3",0,697887,5,NA,NA
+2,2,48,10,4,2,"left leg pain",1,1,4,100,60,76,20,36.3,98,4,"Fracture of trochanteric section of femur, unspecified, closed",2,"4",0,354,3,NA,NA
+2,2,48,9,2,1,"diffuse abdominal pain",1,1,4,110,70,110,20,36.4,97,3,"Hepatocellular carcinoma",2,"3",0,29073,2,NA,NA
+2,2,48,3,3,1,"ant. chest pain",1,1,4,140,90,56,20,36.6,100,2,"Ischaemic chest pain",2,"2",0,11697,2,NA,NA
+2,2,50,8,4,1,"abd pain",1,1,4,120,70,78,18,36.4,98,3,"Cholecystitis with cholelithiasis NOS, With obstruction",7,"3",0,435,2,NA,NA
+2,2,51,5,3,1,"Left leg pain",1,1,4,120,70,76,20,36.1,98,4,"Pain in limb, hip (joint)",1,"4",0,113,1,NA,NA
+2,1,51,3,3,2,"ocular pain",1,1,4,120,80,72,20,36.4,98,4,"Fracture of medial wall of orbit, closed",1,"4",0,370,2,NA,NA
+2,1,52,6,3,2,"toe pain",1,1,4,110,70,80,20,36.8,98,4,"Contusion of toe(s), NOS",1,"4",0,92,4,NA,NA
+2,2,53,6,2,1,"Left chest pain",1,1,4,120,80,96,20,36.9,97,2,"Brugada syndrome",2,"2",0,229,4,NA,NA
+2,2,57,9,3,2,"Open Wound",1,1,4,120,80,78,18,36.4,99,4,"Open wound of other parts of head, face",1,"4",0,212,3,NA,NA
+2,1,57,8,2,1,"Left chest pain",1,1,4,120,80,76,20,36.5,99,2,"Varient angina",1,"2",0,383,3,NA,NA
+2,2,58,10,2,1,"ant. chest pain",1,1,4,140,90,60,20,36,99,2,"Ischaemic chest pain",2,"2",0,9619,2,NA,NA
+2,2,61,8,2,2,"Open Wound",1,1,4,130,80,88,20,36.6,97,3,"Multiple fracture of unspecified ribs,Closed",2,"3",0,8605,4,NA,NA
+2,2,63,3,4,1,"ant. chest pain",1,1,4,140,100,62,20,36.2,99,2,"Ischaemic chest pain",2,"2",0,21492,2,NA,NA
+2,2,63,9,3,1,"Left chest pain",1,1,4,140,90,98,24,36,99,2,"Unstable angina",1,"2",0,421,4,NA,NA
+2,2,64,5,4,1,"Lt. side weakness",1,1,4,160,100,78,18,36,100,2,"Cerebral infarction due to thrombosis of posterior cerebral artery",1,"2",0,7708,3,NA,NA
+2,2,64,9,3,2,"finger pain",1,1,4,140,90,66,20,36.4,97,4,"Open wound of finger(s) without damage to nail",1,"4",0,453,4,NA,NA
+2,1,65,11,2,1,"ant. chest pain",1,1,4,110,70,52,20,36,98,2,"Supraventricular tachycardia",1,"2",0,457,4,NA,NA
+2,1,66,10,3,1,"Rt. flank pain",1,1,4,120,80,51,20,36.5,98,3,"Ureteric stone",1,"3",0,426,5,NA,NA
+2,1,66,12,3,1,"right upper abdominal pain",1,1,4,110,70,95,20,36.3,99,3,"Unspecified abdominal pain",2,"3",0,632,3,NA,NA
+2,1,72,5,2,1,"Abd. pain",1,1,4,120,60,63,20,36.4,96,3,"Acute renal failure, unspecified",2,"3",0,977,2,NA,NA
+2,1,75,8,4,1,"abdominal pain, periumbilical area",1,1,4,110,70,80,20,37.3,96,3,"Intussusception",7,"3",0,389,2,NA,NA
+2,2,75,6,3,1,"ocular pain, Lt.",1,1,4,130,80,66,20,36.3,97,4,"Corneal abrasion",1,"4",0,89,1,NA,NA
+2,1,75,6,4,1,"Abd. pain",1,1,4,110,70,86,20,36.9,97,3,"Acute cholecystitis",2,"3",0,930,3,NA,NA
+2,1,76,3,3,1,"diarrhea",1,1,4,100,60,78,20,36.6,100,4,"Acute watery diarrhoea",1,"4",0,690,4,NA,NA
+2,2,77,8,4,2,"hip pain Lt.",1,1,4,150,100,88,20,36.2,97,4,"Fracture of trochanteric section of femur, unspecified, closed",2,"4",0,227,3,NA,NA
+2,1,78,3,2,2,"both ocular pain",1,1,4,150,90,72,20,36.2,98,4,"Punctate keratatitis",1,"4",0,137,2,NA,NA
+2,1,81,5,3,2,"wrist pain, Rt",1,1,4,120,80,76,20,36,96,4,"Fracture of lower end of radius, unspecified, closed",2,"4",0,581,3,0,NA
+2,1,81,6,4,1,"Abd. pain",1,1,4,100,60,110,22,37.1,93,3,"Cholangitis NOS",2,"3",0,10100,2,NA,NA
+2,1,82,2,2,1,"dyspnea",1,1,4,140,90,64,22,36.4,96,2,"Asthma, unspecified",2,"2",0,1101,2,NA,NA
+2,2,88,7,2,2,"Head pain",1,1,4,140,90,78,20,36.2,98,4,"Open wound of head, part unspecified",4,"4",0,7992,2,NA,NA
+2,1,89,3,2,1,"Left chest pain",1,1,4,100,60,48,20,36,95,2,"Other chest pain",1,"2",0,148,2,NA,NA
+2,1,16,4,3,2,"ocular pain, Lt.",1,1,5,100,60,76,20,36.6,98,4,"Contusion of eyelid and periocular area",1,"4",0,184,2,NA,NA
+2,1,22,4,3,2,"Eye Foreign Body",1,1,5,100,60,80,20,36,97,4,"Punctate keratatitis",1,"4",0,238,2,NA,NA
+2,2,24,8,3,1,"chest discomfort left",1,1,5,160,100,98,20,36.5,98,2,"Ischaemic chest pain",1,"2",0,588,4,NA,NA
+2,2,31,8,3,2,"Open Wound",1,1,5,170,90,112,22,36.4,99,4,"Open wound of head, part unspecified",1,"4",0,8108,2,NA,NA
+2,1,34,2,3,1,"Abdominal pain (finding)",1,1,5,100,60,90,20,36,98,3,"Gastroenteritis and colitis of unspecified origin",2,"3",0,704,2,NA,NA
+2,2,43,11,3,1,"diffuse abdominal pain",1,1,5,140,90,87,20,36,96,3,"Other acute pancreatitis",2,"3",0,403,3,NA,NA
+2,1,43,8,2,2,"elbow painful swelling lt.",1,1,5,140,100,108,20,36.4,98,4,"Contusion of elbow",1,"4",0,174,3,NA,NA
+2,2,47,5,3,2,"Open Wound",1,1,5,130,80,93,20,36.3,98,4,"Superficial injury of head, part unspecified, contusion",1,"4",0,83,2,NA,NA
+2,2,47,12,3,2,"Open Wound",1,1,5,110,60,92,20,36.6,98,4,"Open wound of finger(s), NOS",1,"4",0,127,2,NA,NA
+2,2,48,5,2,1,"right chest pain",1,1,5,120,80,64,20,36.3,99,2,"Unstable angina",1,"2",0,8449,4,NA,NA
+2,2,51,11,4,1,"ant. chest pain",1,1,5,120,80,78,18,36.4,99,2,"Unstable angina",1,"2",0,7937,4,NA,NA
+2,1,51,5,3,1,"headache",1,1,5,110,70,80,20,36,98,3,"Migraine, unspecified",1,"3",0,7985,2,NA,NA
+2,2,51,3,3,1,"abd pain",1,1,5,110,70,86,20,36.4,100,3,"Other and unspecified cirrhosis of liver, Child-Pugh C",2,"3",0,10799,4,NA,NA
+2,1,54,6,3,1,"abd pain",1,1,5,120,80,100,20,36.3,97,3,"Gastrointestinal haemorrhage, unspecified",2,"3",0,699878,4,NA,NA
+2,1,58,7,4,2,"Open Wound",1,1,5,110,70,100,20,37.2,97,4,"Localized swelling, mass and lump, neck",2,"4",0,9014,4,NA,NA
+2,1,60,6,1,2,"Rt. flank pain",1,1,5,140,90,80,20,36.6,98,4,"Contusion of flank",1,"4",0,280,2,NA,NA
+2,2,60,4,4,1,"RUQ pain",1,1,5,140,100,104,20,38.1,97,3,"Cholangitis",2,"3",0,2014,1,NA,NA
+2,1,61,6,2,2,"burn, face",1,1,5,140,90,72,20,36.3,97,4,"Burn of first degree of head and neck, multiple sites head, face, and neck",1,"4",0,8034,3,0,NA
+2,2,62,7,3,1,"Lt flank pain",1,1,5,160,90,101,20,36.7,98,3,"Chronic kidney disease, unspecified",2,"3",0,9706,3,NA,NA
+2,1,67,4,3,1,"ant. chest pain",1,1,5,140,90,85,20,36.2,95,3,"Other chest pain",1,"3",0,255,3,NA,NA
+2,2,68,10,4,2,"headache",1,1,5,120,80,88,22,36.4,98,3,"Multiple contusion NOS",2,"3",0,399,3,NA,NA
+2,1,68,2,2,1,"abd pain",1,1,5,130,90,96,20,36.2,98,4,"Ileus, unspecified",2,"4",0,10723,3,NA,NA
+2,2,71,5,3,1,"Left chest pain",1,1,5,150,90,108,24,36.7,99,2,"Ischaemic chest pain",2,"2",0,535,5,NA,NA
+2,2,73,4,3,2,"TMJ pain",1,1,5,110,70,82,20,36.6,98,4,"Derangement of temporomandibular joint",1,"4",0,77,2,NA,NA
+2,2,74,10,2,1,"ant. chest pain",1,1,5,170,100,68,20,36.6,99,2,"Acute myocardial infarction, unspecified",2,"2",0,9433,1,NA,NA
+2,2,75,11,3,2,"pain, chest wall",1,1,5,110,70,74,20,36.3,95,3,"Multiple fracture of unspecified ribs,Closed",1,"3",0,300,4,NA,NA
+2,2,85,10,4,1,"ant. chest pain",1,1,5,190,100,66,20,36.6,96,2,"Unstable angina",2,"2",0,10002,2,NA,NA
+2,1,88,10,4,1,"abd pain",1,1,5,110,70,80,18,36.9,94,3,"Gallstone(impacted) of cystic duct with acute cholecystitis, With obstruction",2,"3",0,465,3,NA,NA
+2,2,21,12,3,1,"scrotal pain",1,1,6,140,90,70,20,36.5,96,3,"Epididymo-orchitis, without abscess",1,"3",0,177,2,NA,NA
+2,2,29,4,2,2,"Open Wound",1,1,6,120,70,88,20,36.6,97,4,"Open wound of forearm, part unspecified",4,"4",0,94,3,NA,NA
+2,1,33,8,3,1,"Vaginal Bleeding",1,1,6,160,100,74,20,37.4,100,4,"Abnormal uterine and vaginal bleeding, unspecified",1,"4",0,191,3,NA,NA
+2,2,37,5,3,2,"ocular injury, Lt.",1,1,6,120,80,78,18,36.1,99,4,"Ocular pain",1,"4",0,276,2,NA,NA
+2,1,42,12,3,2,"Open Wound",1,1,6,100,60,72,18,37.2,97,4,"Open wound of other parts of head, face",1,"4",0,37,4,NA,NA
+2,1,43,8,1,1,"RUQ pain",1,1,6,110,60,90,20,36.5,98,3,"Calculus of gallbladder with other cholecystitis, Without mention of obstruction",2,"3",0,8723,4,NA,NA
+2,2,45,5,3,1,"ant. chest pain",1,1,6,140,100,96,20,36.5,98,2,"Angina pectoris, unspecified",1,"2",0,315,3,NA,NA
+2,2,45,10,3,1,"headache",1,1,6,180,100,94,26,36.8,99,3,"Headache",1,"3",0,364,5,NA,NA
+2,2,47,13,2,2,"lower extremity paraparesis",1,1,6,110,80,78,20,36,94,2,"Stress fracture of vertebra, Cervical region",2,"2",0,399,4,NA,NA
+2,2,47,7,3,2,"Foreign Body Sense",1,1,6,120,80,76,20,36.3,96,3,"Foreign body in oesophagus",1,"3",0,314,3,NA,NA
+2,2,50,12,4,1,"upper back pain",1,1,6,120,60,64,20,36.5,97,2,"Transmural myocardial infarction NOS",2,"2",0,9921,3,NA,NA
+2,2,51,8,3,2,"ocular pain, Rt.",1,1,6,110,60,61,20,36.3,98,4,"Corneal abrasion",1,"4",0,99,4,NA,NA
+2,1,57,5,2,1,"palpitation",1,1,6,130,80,73,22,36.2,98,3,"Palpitations",1,"3",0,8065,2,NA,NA
+2,2,58,12,3,1,"Left chest pain",1,1,6,160,100,110,20,36.5,98,2,"Angina pectoris, unspecified",2,"2",0,10150,4,NA,NA
+2,2,58,8,3,2,"ocular pain, Lt.",1,1,6,160,100,84,20,36.5,97,4,"",1,"4",0,193,3,NA,NA
+2,2,58,7,4,1,"ant. chest pain",1,1,6,110,60,62,20,36.2,97,2,"Acute transmural myocardial infarction of inferior wall",2,"2",0,274,4,NA,NA
+2,1,59,8,3,2,"Open Wound",1,1,6,140,100,75,20,36.3,95,4,"Open wound of other parts of head, face",1,"4",0,223,3,NA,NA
+2,2,62,8,1,1,"Left chest pain",1,1,6,110,80,78,20,36.2,98,2,"Ischaemic chest pain",2,"2",0,504,4,NA,NA
+2,2,66,6,3,1,"D - Diarrhea",1,1,6,110,60,98,20,36.5,99,3,"Regional colitis, unspecified",2,"3",0,315,2,NA,NA
+2,1,68,5,3,1,"headache",1,1,6,200,110,90,20,36.8,98,3,"Tension-type headache",1,"3",0,8805,4,NA,NA
+2,2,68,10,1,1,"RUQ pain",1,1,6,120,80,78,20,36.8,98,3,"Acute cholecystitis",2,"3",0,197,3,NA,NA
+2,1,69,8,3,1,"epigastric pain",1,1,6,160,100,72,20,36.4,98,2,"Unstable angina",2,"2",0,309,1,NA,NA
+2,2,69,12,2,1,"chest discomfort",1,1,6,150,100,70,20,36.4,97,2,"Angina pectoris, unspecified",1,"2",0,18980,3,NA,NA
+2,2,72,5,4,2,"Left chest pain",1,1,6,100,60,86,24,36.4,94,2,"Contusion of abdomen wall",7,"2",0,206,4,NA,NA
+2,2,74,8,4,1,"ant. chest pain",1,1,6,110,60,60,20,36.6,96,2,"Observation for suspected myocardial infarction",5,"2",0,10268,2,NA,NA
+2,1,75,8,3,1,"ant. chest pain",1,1,6,110,60,60,20,36.1,98,2,"Ischaemic chest pain",2,"2",0,19523,2,NA,NA
+2,1,77,2,4,1,"headache",2,1,6,190,100,84,20,36.5,97,2,"Intracerebral haemorrhage in cerebellum",7,"2",0,189,2,NA,NA
+2,1,77,8,4,1,"Hip joint pain",1,1,6,110,60,84,20,36.7,97,4,"Abscess of fascia, buttock",1,"4",0,9377,3,NA,NA
+2,1,78,6,4,1,"ant. chest pain",1,1,6,120,60,100,20,36.3,99,2,"Acute transmural myocardial infarction of unspecified site",2,"2",0,475,2,NA,NA
+2,2,78,8,1,1,"RUQ pain",1,1,6,110,60,65,20,36,95,3,"Acute cholecystitis",2,"3",0,8695,4,NA,NA
+2,2,28,7,3,1,"both leg pain",1,1,7,100,60,78,20,36.6,97,4,"Complex regional pain syndrome type II",1,"4",0,8118,3,NA,NA
+2,2,49,5,3,1,"ant. chest pain",1,1,8,140,90,60,20,36,99,2,"Myocardial infarction with non-ST elevation",2,"2",0,10286,3,NA,NA
+2,2,56,7,4,1,"upper back pain",1,1,8,180,100,84,22,36,100,2,"Abdominal aortic aneurysm, ruptured",2,"2",0,234,2,NA,NA
+2,1,16,6,3,1,"nausea",1,1,3,110,60,102,22,36.8,97,4,"Unspecified abdominal pain",2,"4",0,8961,2,NA,NA
+2,1,41,5,3,2,"Open Wound",1,1,3,120,80,74,20,36.3,98,3,"Superficial injury of face NOS, contusion",1,"3",0,117,4,NA,NA
+2,2,50,3,3,1,"upper abdominal pain",1,1,3,120,80,84,20,36.4,97,4,"Unspecified abdominal pain",1,"4",0,410,3,NA,NA
+2,1,67,10,4,1,"ant. chest pain",1,1,3,100,60,80,20,36,94,2,"Unstable angina",1,"2",0,802,3,NA,NA
+2,1,80,6,3,1,"ant. chest pain",1,1,3,150,90,108,24,36.2,98,2,"Unstable angina",1,"2",0,578,1,NA,NA
+2,2,35,12,3,2,"Open Wound",1,1,2,120,80,80,20,36.2,98,4,"Open wound of finger(s), NOS",5,"4",0,223,3,NA,NA
+2,2,40,8,3,1,"For  IV injection",1,1,2,110,70,99,20,36,98,5,"Polyneuropathy in neoplastic disease (C00-D48+)",1,"5",0,54,2,NA,NA
+2,2,49,6,2,1,"ant. chest pain",1,1,2,150,90,92,20,36.2,98,2,"Ischaemic chest pain",2,"2",0,1591,2,NA,NA
+2,2,70,3,1,2,"Open Wound",1,1,2,110,70,80,18,36.6,98,4,"Open wound of other parts of head, face",1,"4",0,274,3,NA,NA
+2,2,24,12,3,1,"ant. chest pain",1,1,3,140,90,102,20,36.3,96,4,"Ischaemic chest pain",1,"4",0,526,2,NA,NA
+2,2,25,10,3,2,"lip laceration",1,1,3,110,70,84,20,36,97,5,"Open wound of lip",1,"5",0,98,2,NA,NA
+2,1,27,11,3,2,"ocular pain, Rt.",1,1,3,120,70,78,20,36.2,96,4,"Corneal abrasion",1,"4",0,72,2,NA,NA
+2,1,29,12,3,1,"right lower abdominal pain",1,1,3,110,70,80,20,36.1,98,4,"Unspecified abdominal pain",1,"4",0,755,5,NA,NA
+2,1,32,12,3,1,"abd pain",1,1,3,110,36,100,24,36.5,100,4,"Maternal care for cervical incompetence, less than 22 weeks pregnant",1,"4",0,182,3,NA,NA
+2,1,36,8,3,1,"Vaginal Bleeding",1,1,3,120,80,80,20,36.4,98,4,"Ectopic pregnancy, unspecified",1,"4",0,477,4,NA,NA
+2,2,48,5,3,2,"eye pain left eye",1,1,3,110,70,66,20,36.1,100,4,"Open wound of other parts of head, face",1,"4",0,8100,2,NA,NA
+2,2,50,6,2,1,"Rt. flank pain",1,1,3,150,100,72,20,36.3,98,4,"Ureteric stone",1,"4",0,766,3,NA,NA
+2,2,51,17,3,1,"ant. chest pain",1,1,3,140,100,80,20,36.4,98,2,"Unstable angina",2,"2",0,362,3,NA,NA
+2,1,52,12,3,1,"headache",1,1,3,120,80,80,20,36.1,98,4,"Cerebral infarction, unspecified",2,"4",0,789,4,NA,NA
+2,1,69,11,3,1,"dyspnea",1,1,3,140,80,98,20,36.7,96,3,"Adrenocortical insufficiency NOS",1,"3",0,20821,5,NA,NA
+2,2,74,12,3,1,"ant. chest pain",1,1,3,140,90,80,20,36,98,2,"Unstable angina",2,"2",0,301,2,NA,NA
+2,2,77,12,3,1,"dyspnea",1,1,3,110,70,65,20,36.5,95,4,"Heart failure, unspecified",2,"4",0,10254,4,NA,NA
+2,1,82,7,3,1,"epigastric pain",1,1,3,150,90,94,20,36.5,99,4,"Unspecified abdominal pain",1,"4",0,8109,3,NA,NA
+2,1,86,11,3,1,"Pain, Abdomen",1,1,3,100,60,76,20,36.4,100,4,"Upper abdominal pain, unspecified",2,"4",0,10010,2,NA,NA
+2,1,30,10,4,1,"Vaginal Bleeding",1,1,4,120,80,80,20,36,98,3,"Spontaneous preterm labour, 22 weeks or more and less than 34weeks pregnagnt",2,"3",0,59,4,NA,NA
+2,1,31,7,4,1,"Abdominal pain (finding)",1,1,4,100,60,100,20,36.3,98,3,"Preterm labour without delivery, 22 weeks or more and less than 34weeks pregnant",2,"3",0,123,4,NA,NA
+2,2,49,4,3,2,"oral bleeding",1,1,4,120,70,78,20,36.6,98,4,"Traumatic secondary and recurrent haemorrhage",1,"4",0,188,3,NA,NA
+2,1,55,6,4,2,"post neck pain",1,1,4,130,80,86,20,36.2,96,2,"Closed fracture of second cervical vertebra",2,"2",0,399,3,NA,NA
+2,1,69,8,3,1,"Lt flank pain",1,1,4,120,80,80,20,36,98,3,"Unspecified abdominal pain",1,"3",0,343,4,NA,NA
+2,1,78,6,3,1,"ocular pain, both",1,1,4,130,80,96,20,36.4,98,4,"Ocular pain",1,"4",0,107,2,NA,NA
+2,2,82,13,3,2,"ocular pain, Lt.",1,1,4,130,80,82,20,36.3,96,4,"Burn of cornea and conjunctival sac",1,"4",0,180,3,NA,NA
+2,2,21,4,3,2,"lip laceration",1,1,5,110,70,76,20,36.6,98,4,"Open wound of lip and oral cavity, part unspecified",1,"4",0,747,2,NA,NA
+2,2,36,8,3,2,"decerased visual acuity",1,1,6,130,80,64,20,36.3,99,4,"Traumatic hyphaema",1,"4",0,182,3,NA,NA
+1,1,56,NA,1,2,"Unresponsive",2,1,9,65,59,149,34,35,84,1,"Major Trauma",2,"1",1,79.2719966173172,2.97984859952703,NA,NA
+1,2,76,NA,2,2,"Severe Trauma",3,1,8,86,42,46,34,37,87,1,"Septic Shock",1,"1",1,20.6297117331997,9.58556122961454,NA,NA
+1,2,81,NA,1,2,"Unresponsive",2,1,NA,60,53,138,30,38,78,2,"Septic Shock",3,"1",2,12.4193086847663,7.76833787118085,NA,NA
+2,1,74,NA,2,2,"Seizure with Apnea",3,0,8,85,40,136,27,36,80,1,"Septic Shock",5,"1",2,119.23492583679,8.37059844937176,NA,NA
+1,2,83,NA,4,1,"Seizure with Apnea",4,1,NA,69,41,147,28,35,78,2,"Septic Shock",3,"1",1,74.2332730232738,4.75999391567893,NA,NA
+2,1,78,NA,6,2,"Severe Trauma",4,1,9,76,43,135,35,35,87,2,"Major Trauma",3,"1",1,96.0005371645093,6.34454643796198,NA,NA
+2,2,54,NA,6,2,"Respiratory Arrest",2,0,9,85,49,40,35,37,78,2,"Cardiac Arrest",3,"1",2,108.108573486097,8.18941202014685,NA,NA
+2,1,57,NA,3,2,"Respiratory Arrest",4,0,NA,76,40,41,27,38,88,2,"Cardiac Arrest",5,"1",1,93.0351998936385,8.99567785370164,NA,NA
+1,2,61,NA,1,1,"Respiratory Arrest",3,0,10,88,44,135,31,36,83,1,"Septic Shock",5,"1",2,117.712410313543,4.4667243398726,NA,NA
+1,2,62,NA,4,2,"Seizure with Apnea",2,0,8,85,60,41,27,37,82,2,"Cardiac Arrest",3,"1",1,14.8561774729751,1.81289875833318,NA,NA
+2,1,67,NA,1,2,"Severe Trauma",2,0,9,86,47,131,26,36,81,2,"Major Trauma",5,"1",2,109.374097317923,6.63169273384847,NA,NA
+2,1,82,NA,1,2,"Cardiac Arrest",3,1,NA,80,60,142,31,35,84,1,"Major Trauma",2,"1",1,105.205089545343,7.71072595566511,NA,NA
+2,1,76,NA,3,1,"Unresponsive",4,0,9,66,52,135,27,36,75,2,"Septic Shock",3,"1",1,95.2948350505903,1.76840611593798,NA,NA
+1,1,74,NA,4,2,"Cardiac Arrest",2,1,8,87,57,149,33,37,89,2,"Major Trauma",5,"1",2,51.4498058543541,3.7046585008502,NA,NA
+2,2,70,NA,1,2,"Unresponsive",3,1,10,80,49,42,31,36,76,1,"Cardiac Arrest",2,"1",2,14.6318853553385,6.53105941577815,NA,NA
+1,1,64,NA,3,1,"Seizure with Apnea",3,1,10,85,45,136,33,37,82,2,"Septic Shock",1,"1",2,50.0852189818397,7.77638852153905,NA,NA
+2,2,75,NA,6,2,"Severe Trauma",2,0,NA,68,46,41,28,37,77,1,"Cardiac Arrest",3,"1",2,40.1126396772452,9.25351419742219,NA,NA
+1,2,80,NA,3,1,"Respiratory Arrest",3,1,10,79,48,44,26,35,84,2,"Cardiac Arrest",5,"1",2,103.5514228791,5.28175455122255,NA,NA
+1,1,65,NA,2,2,"Respiratory Arrest",2,0,NA,65,55,149,30,36,81,2,"Septic Shock",1,"1",1,49.8641883698292,6.1040751952678,NA,NA
+1,1,79,NA,6,1,"Cardiac Arrest",2,1,NA,77,56,130,34,38,85,2,"Major Trauma",1,"1",1,43.4925569663756,7.62958311475813,NA,NA
+1,1,55,NA,6,1,"Respiratory Arrest",3,0,NA,89,60,143,33,35,75,2,"Cardiac Arrest",5,"1",1,93.5048873350024,8.71702681994066,NA,NA
+2,1,57,NA,3,1,"Cardiac Arrest",2,0,NA,88,52,131,35,36,86,1,"Cardiac Arrest",5,"1",1,102.931808675639,9.18231854029,NA,NA
+1,2,71,NA,2,1,"Severe Trauma",4,0,9,76,60,49,31,36,76,1,"Major Trauma",7,"1",2,60.3713717195205,1.50744002824649,NA,NA
+1,1,71,NA,2,1,"Respiratory Arrest",2,0,8,64,47,147,29,38,77,1,"Major Trauma",1,"1",1,90.2594830910675,5.52617473690771,NA,NA
+1,1,80,NA,2,1,"Severe Trauma",2,0,8,84,60,45,35,36,87,2,"Major Trauma",5,"1",2,21.4486499642953,4.15490295737982,NA,NA

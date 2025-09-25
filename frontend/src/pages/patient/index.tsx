@@ -1,27 +1,29 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from "react";
 import {
   Container,
   Typography,
   Paper,
-  List,
-  ListItem,
-  ListItemText,
+  Box,
   TextField,
   IconButton,
-  Box,
-  Divider,
+  Grid,
+  Button,
   CircularProgress,
   Alert,
-  // MenuItem,
-  // Select,
-  // FormControl,
-  // InputLabel,
-} from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
+  InputAdornment,
+} from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
+
+// Example prompts
+const examples = [
+  "🧠 What should I do if someone has a seizure?",
+  "🏥 Where is the closest hospital with the shortest wait time?",
+  "💊 How do I know if my symptoms need urgent care?",
+];
 
 // Message types
 type ChatMessage = {
-  sender: 'user' | 'ai';
+  sender: "user" | "ai";
   text: string;
 };
 
@@ -37,60 +39,65 @@ type WebSocketResponse = {
 
 export default function PatientPage() {
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { sender: 'ai', text: 'Hi! I’m HealthFlow AI. How can I help you today?' },
+    { sender: "ai", text: "Hi! I’m HealthFlow AI. How can I help you today?" },
   ]);
-  const [input, setInput] = useState('');
-  // const [language, setLanguage] = useState('en'); // 👈 disabled for now
+  const [input, setInput] = useState("");
   const [isConnecting, setIsConnecting] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const chatEndRef = useRef<HTMLDivElement | null>(null);
   const ws = useRef<WebSocket | null>(null);
   const retryAttempt = useRef(0);
   const reconnectTimeout = useRef<NodeJS.Timeout | null>(null);
 
+  // Auto-scroll
+  const scrollToBottom = () => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
+  // WebSocket connection
   const connectWebSocket = () => {
     setIsConnecting(true);
     setError(null);
 
-    const websocket = new WebSocket('ws://localhost:8000/ws/triage');
+    const websocket = new WebSocket("ws://localhost:8000/ws/triage");
 
     websocket.onopen = () => {
-      console.log('✅ Connected to triage WebSocket');
+      console.log("✅ Connected to triage WebSocket");
       setIsConnecting(false);
       setError(null);
-      retryAttempt.current = 0; // reset retries
+      retryAttempt.current = 0;
     };
 
     websocket.onmessage = (event) => {
       try {
         const data: WebSocketResponse = JSON.parse(event.data);
 
-        setMessages((prev) => [
-          ...prev,
-          { sender: 'ai', text: data.response },
-        ]);
+        setMessages((prev) => [...prev, { sender: "ai", text: data.response }]);
 
         if (data.recommended_level) {
           console.log(`Triage Level: ${data.recommended_level}`);
-          console.log(`Score: ${data.score}`, 'Reasons:', data.reasons);
+          console.log(`Score: ${data.score}`, "Reasons:", data.reasons);
         }
       } catch (err) {
-        console.error('Failed to parse WebSocket message', err);
+        console.error("Failed to parse WebSocket message", err);
       }
     };
 
     websocket.onerror = (e) => {
-      console.error('WebSocket error', e);
-      setError('Connection failed. Retrying...');
+      console.error("WebSocket error", e);
+      setError("Connection failed. Retrying...");
     };
 
     websocket.onclose = () => {
-      console.log('⚠️ WebSocket closed');
-      setError('Disconnected from AI service. Retrying...');
+      console.log("⚠️ WebSocket closed");
+      setError("Disconnected from AI service. Retrying...");
 
-      // Exponential backoff reconnect
       retryAttempt.current += 1;
-      const delay = Math.min(1000 * 2 ** retryAttempt.current, 30000); // cap at 30s
+      const delay = Math.min(1000 * 2 ** retryAttempt.current, 30000);
       if (!reconnectTimeout.current) {
         reconnectTimeout.current = setTimeout(() => {
           reconnectTimeout.current = null;
@@ -110,296 +117,213 @@ export default function PatientPage() {
     };
   }, []);
 
-  const handleSend = () => {
-    if (!input.trim() || !ws.current || ws.current.readyState !== WebSocket.OPEN) return;
+  // Send message
+  const handleSend = (exampleText?: string) => {
+    const messageText = exampleText || input.trim();
+    if (!messageText || !ws.current || ws.current.readyState !== WebSocket.OPEN)
+      return;
 
-    setMessages((prev) => [...prev, { sender: 'user', text: input }]);
+    setMessages((prev) => [...prev, { sender: "user", text: messageText }]);
 
     const payload = JSON.stringify({
-      symptoms: input,
+      symptoms: messageText,
       age: 35,
       known_conditions: [],
-      // language, // 👈 removed for now
     });
 
     ws.current.send(payload);
-    setInput('');
+    setInput("");
   };
 
   return (
-    <Container sx={{ py: 6 }}>
-      <Typography variant="h4" gutterBottom>
-        Patient Services (Free)
-      </Typography>
-      <Typography variant="subtitle1" sx={{ mb: 3 }}>
-        Explore AI-powered tools available to patients:
-      </Typography>
+    <Box sx={{ backgroundColor: "#fff", minHeight: "100vh", py: 4 }}>
+      <Container maxWidth="lg">
+        <Typography variant="h4" gutterBottom>
+          Patient Services (Free)
+        </Typography>
+        <Typography variant="subtitle1" sx={{ mb: 3 }}>
+          Explore AI-powered tools available to patients:
+        </Typography>
 
-      {/* Features Overview */}
-      <Paper elevation={2} sx={{ p: 3, mb: 4 }}>
-        <List>
-          <ListItem>
-            <ListItemText
-              primary="Smart Hospital Recommendations"
-              secondary="See the nearest hospitals ranked by distance and current wait times."
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="Predictive Wait Times"
-              secondary="Get estimates for how wait times may change over the next few hours."
-            />
-          </ListItem>
-          <ListItem>
-            <ListItemText
-              primary="AI Symptom Triage"
-              secondary="Chat naturally with our AI to understand where you should go."
-            />
-          </ListItem>
-        </List>
-      </Paper>
-
-      {/* Chat Section */}
-      <Typography variant="h5" gutterBottom>
-        AI Symptom Chat
-      </Typography>
-
-      <Paper
-        elevation={3}
-        sx={{
-          p: 2,
-          height: 500,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-        }}
-      >
-        {isConnecting && (
-          <Box sx={{ textAlign: 'center', py: 1 }}>
-            <CircularProgress size={20} />{' '}
-            <Typography variant="body2">Connecting...</Typography>
-          </Box>
-        )}
-        {error && (
-          <Alert severity="error" sx={{ mb: 1 }}>
-            {error}
-          </Alert>
-        )}
-        {!isConnecting && !error && (
-          <Typography
-            variant="caption"
-            color="text.secondary"
-            sx={{ textAlign: 'center', mb: 1 }}
-          >
-            Connected • You can start typing...
-          </Typography>
-        )}
-
-        {/* Chat Messages */}
-        <Box sx={{ flexGrow: 1, overflowY: 'auto', mb: 1 }}>
-          {messages.map((msg, idx) => (
-            <Box
-              key={idx}
-              sx={{
-                display: 'flex',
-                justifyContent:
-                  msg.sender === 'user' ? 'flex-end' : 'flex-start',
-                mb: 1,
-                px: 1,
-              }}
-            >
-              <Paper
+        {/* Example Buttons */}
+        <Grid container spacing={2} sx={{ mb: 3 }}>
+          {examples.map((ex, idx) => (
+            <Grid item key={idx}>
+              <Button
+                variant="outlined"
+                onClick={() => handleSend(ex)}
                 sx={{
-                  p: 1.5,
-                  maxWidth: '70%',
-                  bgcolor: msg.sender === 'user' ? 'primary.main' : 'grey.200',
-                  color: msg.sender === 'user' ? 'white' : 'text.primary',
+                  borderRadius: 3,
+                  textTransform: "none",
+                  bgcolor: "#f9f9f9",
+                  px: 3,
+                  py: 1.5,
+                  boxShadow: "0 1px 4px rgba(0,0,0,0.08)",
+                  transition: "all 0.2s ease-in-out",
+                  "&:hover": {
+                    bgcolor: "#f0f0f0",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  },
                 }}
               >
-                {msg.text}
-              </Paper>
-            </Box>
+                {ex}
+              </Button>
+            </Grid>
           ))}
-        </Box>
+        </Grid>
 
-        <Divider />
-
-        {/* Input Only (language dropdown commented out) */}
-        <Box sx={{ display: 'flex', alignItems: 'center', mt: 1, gap: 1 }}>
-          {/* <FormControl size="small" sx={{ minWidth: 120 }}>
-            <InputLabel>Language</InputLabel>
-            <Select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              label="Language"
+        {/* Chat Section */}
+        <Paper
+          elevation={3}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            borderRadius: 2,
+            backgroundColor: "#fff",
+            maxHeight: "80vh",
+            width: "100%",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+          }}
+        >
+          {isConnecting && (
+            <Box sx={{ textAlign: "center", py: 1 }}>
+              <CircularProgress size={20} />{" "}
+              <Typography variant="body2">Connecting...</Typography>
+            </Box>
+          )}
+          {error && (
+            <Alert severity="error" sx={{ mb: 1 }}>
+              {error}
+            </Alert>
+          )}
+          {!isConnecting && !error && (
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              sx={{ textAlign: "center", mb: 1 }}
             >
-              <MenuItem value="en">English</MenuItem>
-              <MenuItem value="es">Español</MenuItem>
-              <MenuItem value="fr">Français</MenuItem>
-              <MenuItem value="ar">العربية</MenuItem>
-              <MenuItem value="zh">中文</MenuItem>
-            </Select>
-          </FormControl> */}
+              Connected • You can start typing...
+            </Typography>
+          )}
 
-          <TextField
-            fullWidth
-            variant="outlined"
-            size="small"
-            placeholder="Describe your symptoms..."
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && handleSend()}
-            disabled={isConnecting || !!error}
-          />
-          <IconButton
-            color="primary"
-            onClick={handleSend}
-            disabled={!input.trim() || isConnecting || !!error}
+                    {/* Messages container */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              overflowY: "auto",
+              px: 2,
+              py: 1,
+              display: "flex",
+              flexDirection: "column",
+              gap: 1,
+            }}
           >
-            <SendIcon />
-          </IconButton>
-        </Box>
-      </Paper>
-    </Container>
+            {messages.map((msg, idx) => (
+              <Box
+                key={idx}
+                sx={{
+                  display: "flex",
+                  justifyContent: msg.sender === "user" ? "flex-end" : "flex-start",
+                }}
+              >
+                <Paper
+                  sx={{
+                    p: 1.5,
+                    maxWidth: "70%",
+                    bgcolor: msg.sender === "user" ? "#DCF8C6" : "#F1F0F0",
+                    color: "#111",
+                    whiteSpace: "pre-line",
+                    borderRadius: 2,
+                    boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                  }}
+                >
+                  {msg.text}
+                </Paper>
+              </Box>
+            ))}
+            <div ref={chatEndRef} />
+          </Box>
+
+
+          {/* Messages
+          <Box
+            sx={{
+              flexGrow: 1,
+              overflowY: "auto",
+              px: 2,
+              py: 1,
+              display: "flex",
+              flexDirection: "column",
+              gap: 1,
+            }}
+          >
+            {messages.map((msg, idx) => (
+              <Box
+                key={idx}
+                sx={{
+                  display: "flex",
+                  justifyContent:
+                    msg.sender === "user" ? "flex-end" : "flex-start",
+                }}
+              >
+                <Paper
+                  sx={{
+                    p: 1.5,
+                    maxWidth: "70%",
+                  bgcolor: msg.sender === 'user' ? 'primary.main' : 'grey.200',
+                  color: msg.sender === 'user' ? 'white' : 'text.primary',
+                    // bgcolor: msg.sender === "user" ? "#1976d2" : "#F1F0F0",
+                    // color: msg.sender === "user" ? "#fff" : "#111",
+                    whiteSpace: "pre-line",
+                    borderRadius: 2,
+                    boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
+                  }}
+                >
+                  {msg.text}
+                </Paper>
+              </Box>
+            ))}
+            <div ref={chatEndRef} />
+          </Box> */}
+
+          {/* Input */}
+          <Box sx={{ px: 2, py: 1 }}>
+            <TextField
+              fullWidth
+              variant="outlined"
+              placeholder="Type your symptoms here..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  handleSend();
+                }
+              }}
+              disabled={isConnecting || !!error}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton
+                      color="primary"
+                      onClick={() => handleSend()}
+                      disabled={!input.trim() || isConnecting || !!error}
+                    >
+                      <SendIcon />
+                    </IconButton>
+                  </InputAdornment>
+                ),
+                sx: {
+                  borderRadius: "25px",
+                  bgcolor: "#f5f5f5",
+                },
+              }}
+            />
+          </Box>
+        </Paper>
+      </Container>
+    </Box>
   );
 }
 
 
-
-
-
-// import React, { useState } from 'react';
-// import {
-//   Container,
-//   Typography,
-//   Paper,
-//   List,
-//   ListItem,
-//   ListItemText,
-//   TextField,
-//   IconButton,
-//   Box,
-//   Divider,
-// } from '@mui/material';
-// import SendIcon from '@mui/icons-material/Send';
-
-// type Message = {
-//   sender: 'user' | 'ai';
-//   text: string;
-// };
-
-// export default function PatientPage() {
-//   const [messages, setMessages] = useState<Message[]>([
-//     { sender: 'ai', text: 'Hi! I’m Healthflow AI. How can I help you today?' },
-//   ]);
-//   const [input, setInput] = useState('');
-
-//   const handleSend = () => {
-//     if (!input.trim()) return;
-
-//     // Add user message
-//     const newMessages = [...messages, { sender: 'user', text: input }];
-
-//     // Mock AI response (replace with backend call later)
-//     const aiResponse = {
-//       sender: 'ai',
-//       text: "I'm analyzing your symptoms... (this will connect to the AI backend).",
-//     };
-
-//     setMessages([...newMessages, aiResponse]);
-//     setInput('');
-//   };
-
-//   return (
-//     <Container sx={{ py: 6 }}>
-//       <Typography variant="h4" gutterBottom>
-//         Patient Services (Free)
-//       </Typography>
-//       <Typography variant="subtitle1" sx={{ mb: 3 }}>
-//         Explore AI-powered tools available to patients:
-//       </Typography>
-
-//       {/* Features Overview */}
-//       <Paper elevation={2} sx={{ p: 3, mb: 4 }}>
-//         <List>
-//           <ListItem>
-//             <ListItemText
-//               primary="Smart Hospital Recommendations"
-//               secondary="See the nearest hospitals ranked by distance and current wait times."
-//             />
-//           </ListItem>
-//           <ListItem>
-//             <ListItemText
-//               primary="Predictive Wait Times"
-//               secondary="Get estimates for how wait times may change over the next few hours."
-//             />
-//           </ListItem>
-//           <ListItem>
-//             <ListItemText
-//               primary="AI Symptom Triage"
-//               secondary="Chat naturally with our AI to understand where you should go."
-//             />
-//           </ListItem>
-//         </List>
-//       </Paper>
-
-//       {/* Chat Section */}
-//       <Typography variant="h5" gutterBottom>
-//         AI Symptom Chat
-//       </Typography>
-//       <Paper
-//         elevation={3}
-//         sx={{
-//           p: 2,
-//           height: 400,
-//           display: 'flex',
-//           flexDirection: 'column',
-//           justifyContent: 'space-between',
-//         }}
-//       >
-//         {/* Chat Messages */}
-//         <Box sx={{ flexGrow: 1, overflowY: 'auto', mb: 2 }}>
-//           {messages.map((msg, idx) => (
-//             <Box
-//               key={idx}
-//               sx={{
-//                 display: 'flex',
-//                 justifyContent: msg.sender === 'user' ? 'flex-end' : 'flex-start',
-//                 mb: 1,
-//               }}
-//             >
-//               <Paper
-//                 sx={{
-//                   p: 1.5,
-//                   maxWidth: '70%',
-//                   bgcolor: msg.sender === 'user' ? 'primary.main' : 'grey.200',
-//                   color: msg.sender === 'user' ? 'white' : 'black',
-//                 }}
-//               >
-//                 {msg.text}
-//               </Paper>
-//             </Box>
-//           ))}
-//         </Box>
-
-//         <Divider />
-
-//         {/* Input Box */}
-//         <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
-//           <TextField
-//             fullWidth
-//             variant="outlined"
-//             size="small"
-//             placeholder="Type your symptoms here..."
-//             value={input}
-//             onChange={(e) => setInput(e.target.value)}
-//             onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-//           />
-//           <IconButton color="primary" onClick={handleSend}>
-//             <SendIcon />
-//           </IconButton>
-//         </Box>
-//       </Paper>
-//     </Container>
-//   );
-// }

@@ -6,10 +6,15 @@ requests
 httpx==0.27.0
 geopy==2.4.1
 beautifulsoup4
+scikit-learn>=1.2.0
+scipy>=1.10.0
+joblib>=1.2.0
 pypmml
 rapidfuzz>=2.16.0
 pandas==2.2.2
 python-multipart==0.0.9
+redis>=5.0.0         # Redis client for Python
+hiredis>=2.0.0       # Optional: speeds up parsing
 
 
 
